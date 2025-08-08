@@ -34,10 +34,12 @@ function sortearAmigo() {
     let listaElementos = document.getElementById("listaAmigos");
     listaElementos.innerHTML = "";
     let indice = Math.floor(Math.random() * nombreAmigos.length);
-    let li = document.createElement("li");
-        li.textContent = `Tu amigo secreto es:  ${nombreAmigos[indice]}`;
+    let msg=`Tu amigo secreto es: ${nombreAmigos[indice]}.`;
+        li = document.createElement("li");
+        li.textContent = msg;
         listaElementos.appendChild(li);
 }
+
 
 
 
